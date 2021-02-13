@@ -2,7 +2,7 @@
 
 Automates some annoying setup procedures for bash dotfiles and aliases, vim and vscode.
 
-:warning: Be carful! Executing may require sudo privileges. So, for the love of god, check this code before you execute it!
+:warning: Executing may require sudo privileges. So, Be careful and check this code beforehand!
 
 * Bash editor style: make your bash-editor look awesome
 * Implement useful bash aliases on the fly
