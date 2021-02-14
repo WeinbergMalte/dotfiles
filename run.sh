@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-#### Functions and tasks ##############################################################
+#### functions and tasks ##############################################################
 
 function make_symlink {
   local source=$1
@@ -15,7 +15,7 @@ function make_symlink {
   fi
 }
 
-function task_setup_shell {
+function task_setup_bashshell {
   make_symlink dotfiles/shell/bashrc ~/.bashrc
   make_symlink dotfiles/shell/bash_aliases ~/.bash_aliases
 }
@@ -54,7 +54,7 @@ cmd=$1
 shift || true
 case "$cmd" in
   lint) linting ;;
-  setup-shell) task_setup_shell ;;
+  setup-bash) task_setup_bashshell ;;
   setup-vim) task_setup_vim ;;
   setup-code) task_setup_vscode ;;
   *)     task_usage ;;
