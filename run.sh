@@ -15,7 +15,7 @@ function make_symlink {
   fi
 }
 
-function task_setup_bashshell {
+function task_setup_bash {
   make_symlink dotfiles/shell/bashrc ~/.bashrc
   make_symlink dotfiles/shell/bash_aliases ~/.bash_aliases
 }
@@ -54,7 +54,7 @@ cmd=$1
 shift || true
 case "$cmd" in
   lint) linting ;;
-  setup-bash) task_setup_bashshell ;;
+  setup-bash) task_setup_bash ;;
   setup-vim) task_setup_vim ;;
   setup-code) task_setup_vscode ;;
   *)     task_usage ;;
