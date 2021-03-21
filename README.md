@@ -2,13 +2,28 @@
 
 Automates some annoying setup procedures for bash dotfiles and aliases, vim and vscode.
 
-:warning: Executing may require sudo privileges. So, Be careful and check this code beforehand!
+:warning: Execution of some helper tasks in run.sh may require superuser privileges. So, Be careful and check this code beforehand!
 
-* Bash editor style: make your bash-editor look awesome
-* Implement useful bash aliases on the fly
-* Setup neovim with some useful plugins
-* Install VS-Code
+### 1. setup-bash
 
-### TODO:
-* Set vim as standard git editor
-* git setup automation?
+Sets softlinks to both .bashrc as well as .bash_aliases. Note that this might cause some annoyances if some content of interest is already present in either file, so you might as well simply copy-paste to the respective files.
+The bash-prompt configuration looks something akin to this:
+
+```
+(myenv) myuser:~/m/m/mydirectory [mybranch]
+└─ $ ▶ _
+```
+
+with virtual-env, user, abbreviated path and git-branch all packed together and colored accordingly.
+
+I personally like the line break in the prompt as compared to, say, powerline. While it uses up more vertical space in the terminal, it gives the eyes a clear and constant place to rest for the beginning of every new command prompt.
+
+The used bash-aliases span trivial matter such as frequent typos (sl vs ls), abbreviations and introduces some useful grep commands.
+
+### 2. setup-vim
+
+Installs Neovim along with some useful plugins (NerdTree, gruvbox colortheme). Sets softlinks to the respective .vimrc and init.vim files and makes nvim the default git editor.
+
+### 3. setup-code
+
+Installs latest version of VS-Code.
