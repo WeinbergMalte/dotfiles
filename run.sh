@@ -53,7 +53,6 @@ task_usage() {
 cmd=$1
 shift || true
 case "$cmd" in
-  lint) linting ;;
   setup-bash) task_setup_bash ;;
   setup-vim) task_setup_vim ;;
   setup-code) task_setup_vscode ;;
