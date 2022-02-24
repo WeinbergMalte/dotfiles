@@ -2,7 +2,7 @@
 
 Automates some annoying setup procedures for bash dotfiles and aliases, vim and vscode.
 
-:warning: Execution of some helper tasks in run.sh may require superuser privileges. So, Be careful and check this code beforehand!
+:warning: Execution of some helper tasks in run.sh may require superuser privileges. Check this code beforehand!
 
 ### 1. setup-bash
 
@@ -11,7 +11,7 @@ The bash-prompt configuration looks something akin to this:
 
 ```
 (myenv) myuser:~/m/m/mydirectory [mybranch]
-└─ $ ▶ _
+└─$ _
 ```
 
 with virtual-env, user, abbreviated path and git-branch all packed together and colored accordingly.
@@ -23,7 +23,3 @@ The used bash-aliases span trivial matter such as frequent typos (sl vs ls), abb
 ### 2. setup-vim
 
 Installs Neovim along with some useful plugins (NerdTree, gruvbox colortheme). Sets softlinks to the respective .vimrc and init.vim files and makes nvim the default git editor.
-
-### 3. setup-code
-
-Installs latest version of VS-Code.
