@@ -1,6 +1,8 @@
 # list:
 alias ls='ls -CF --color=auto'
 alias ll='ls -lha'
+alias dir='dir --color=auto'
+alias vdir='vdir --color=auto'
 
 # folders:
 alias cdd='cd ../..'
@@ -15,12 +17,13 @@ alias c='clear'
 alias h='history'
 
 # sudo:
-alias apt-get='sudo apt-get'
 alias root='sudo -i'
 alias su='sudo -i'
 
 # grep:
 alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 alias grepi='grep -ri'
 alias greph='grep -ri --exclude-dir=".*"'
 alias gn='grep -ri --exclude="*.ipynb"'
@@ -32,18 +35,13 @@ alias gst='git status'
 alias gco='git checkout'
 alias gcm='git commit'
 
-# conda:
-alias ca='conda activate'
-alias cx='conda deactivate'
-alias cu='conda env update'
-alias crm='conda env remove -n'
-
 # jupyter:
 alias jpn='jupyter notebook &'
 alias jpl='jupyter lab &'
+alias jpx='jupyter lab --no-browser'
 
 # vscode:
-alias cde='code --ignore-certificate-errors'
+alias codei='code --ignore-certificate-errors'
 
 # vim:
 alias vim='nvim'
