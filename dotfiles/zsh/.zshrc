@@ -21,28 +21,37 @@ export PATH="/Users/$USER/.local/bin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#### Aliases: ####
+
+#### Aliases: ############################################################################################
+
 # proxies:
 alias unsetproxies="unset HTTP_PROXY HTTPS_PROXY http_proxy https_proxy"
+
 # terminal:
 alias srz="source ~/.zshrc"
+
 # list:
 alias ls="ls -CF --color=auto"
 alias ll="ls -lha"
 alias dir="dir --color=auto"
 alias vdir="vdir --color=auto"
+
 # folders:
 alias cdd="cd ../.."
 alias cddd="cd ../../.."
+
 # typos:
 alias cd..="cd .."
 alias sl="ls"
+
 # shortening:
 alias c="clear"
 alias h="history"
+
 # sudo:
 alias root="sudo -i"
 alias su="sudo -i"
+
 # grep:
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
@@ -50,21 +59,26 @@ alias egrep="egrep --color=auto"
 alias grepi="grep -ri"
 alias greph="grep -ri --exclude-dir='.*'"
 alias gn="grep -ri --exclude='*.ipynb'"
+
 # git:
 alias gdd="git add"
 alias glg="git log --oneline --decorate --graph --all"
 alias gst="git status"
 alias gco="git checkout"
 alias gcm="git commit"
+
 # jupyter:
 alias jpn="jupyter notebook &"
 alias jpl="jupyter lab &"
 alias jpx="jupyter lab --no-browser"
+
 # vscode:
 alias codei="code --ignore-certificate-errors"
+
 # vim:
 alias vim="nvim"
 alias vi="nvim"
+
 # misc:
 alias df="df -Tha --total"
 alias du="du -ach | sort -h"

@@ -1,8 +1,8 @@
 # dotfiles-bash
 
-Automates some annoying setup procedures for bash dotfiles and aliases, vim and vscode.
+Automates some annoying setup procedures for bash dotfiles, aliases, and neovim.
 
-:warning: Execution of some helper tasks in run.sh may require superuser privileges. Check this code beforehand!
+:warning: Execution of some helper tasks in run.sh may require superuser privileges. Don't trust this code and check beforehand!
 
 ### 1. setup-bash
 
